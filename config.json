@@ -1,0 +1,26 @@
+{
+  "locals": {
+    "url": "http://localhost:8080",
+    "name": "James Zhu",
+    "owner": "James Zhu",
+    "description": ""
+  },
+  "plugins": [
+    "./plugins/paginator.coffee",
+    "wintersmith-nunjucks"
+  ],
+  "require": {
+    "moment": "moment",
+    "_": "lodash",
+    "typogr": "typogr"
+  },
+  "markdown": {
+    "smartLists": true,
+    "smartypants": true
+  },
+  "nunjucks": {
+  },
+  "paginator": {
+    "perPage": 3
+  }
+}

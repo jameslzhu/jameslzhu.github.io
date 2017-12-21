@@ -1,2 +1,3 @@
-# jzhu98.github.io
-Website landing page.
+# jameszhu.io
+
+The default [wintersmith](https://github.com/jnordberg/wintersmith) template

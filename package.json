@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "moment": "2.3.x",
+    "typogr": "0.5.x",
+    "wintersmith-nunjucks": "^2.0.0"
+  },
+  "private": "true"
+}
