@@ -1,8 +1,8 @@
 {
   "dependencies": {
     "lodash": "^4.17.4",
-    "moment": "2.3.x",
-    "typogr": "0.5.x",
+    "moment": "^2.11.x",
+    "typogr": "^0.6.x",
     "wintersmith-livereload": "^1.0.0",
     "wintersmith-nunjucks": "^2.0.0",
     "wintersmith-sassy": "^1.2.0"
