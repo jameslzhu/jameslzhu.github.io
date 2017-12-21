@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+
+{% block content %}
+  {% import "author.html" as author %}
+  {% for article in articles %}
+    <article class="article intro">
+      <header>
+        <p class="date"><span>{{moment.utc(article.date).format('DD. MMMM YYYY')}}</span></p>
+        <h2><a href="{{article.url}}">{{article.title}}</a></h2>
+      </header>
+      <section class="content">
+        {% if article.intro.length > 0 %}
+          {{typogr(article.intro).typogrify()}} 
+        {% endif %}
+        {% if article.hasMore %}
+          <p class="more"><a href="{{article.url}}">more</a></p>        
+        {% endif %}
+      </section>
+    </article> 
+  {% endfor %}
+{% endblock %}
+
+{% block footer %}
+  <div class="nav">
+    {% if prevPage %}
+      <a href="{{prevPage.url}}">&laquo; Newer</a>
+    {% else %}
+      <a href="/archive.html">&laquo; Archives</a>
+    {% endif %}
+    {% if nextPage %}
+      <a href="{{nextPage.url}}">Next page &raquo;</a>
+    {% endif %}
+  </div>
+{% endblock %}

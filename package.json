@@ -3,7 +3,9 @@
     "lodash": "^4.17.4",
     "moment": "2.3.x",
     "typogr": "0.5.x",
-    "wintersmith-nunjucks": "^2.0.0"
+    "wintersmith-livereload": "^1.0.0",
+    "wintersmith-nunjucks": "^2.0.0",
+    "wintersmith-sassy": "^1.2.0"
   },
   "private": "true"
 }

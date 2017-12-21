@@ -1,0 +1,10 @@
+{% macro author(authorName) %}
+  {% set author = contents.authors[authorName + '.json'] %}
+  <span class="author">
+      {% if author %}
+        <a href="mailto:{{author.metadata.email}}" ></a> 
+      {% else %}
+        {{authorName}}
+      {% endif %}
+  </span>
+{% endmacro %}
