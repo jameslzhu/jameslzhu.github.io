@@ -7,7 +7,9 @@
   },
   "plugins": [
     "./plugins/paginator.coffee",
-    "wintersmith-nunjucks"
+    "wintersmith-nunjucks",
+    "wintersmith-sassy",
+    "wintersmith-livereload"
   ],
   "require": {
     "moment": "moment",
@@ -18,8 +20,8 @@
     "smartLists": true,
     "smartypants": true
   },
-  "nunjucks": {
-  },
+  "nunjucks": {},
+  "livereload": {},
   "paginator": {
     "perPage": 3
   }

@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block vars %}
+{% comment %} Somehow append? {% endcomment %}
+  {% set bodyclass = 'article-detail' %}
+{% endblock %}
+
+{% block title %}
+{% comment %} Prepend? {% endcomment %}
+  {{ page.title + ' - '}}
+{% endblock %}
+
+{% block header %}
+  {% import "author.html" as author %}
+  <h1>{{page.title}}</h1>
+  <p class="author">Written by {{author(page.metadata.author)}} </p>
+{% endblock header %}
+
+{% block content %}
+  <article class="article">
+    <section class="content">
+      {{typogr(page.html).typogrify()}}
+    </section>
+  </article>
+{% endblock content %}
+
+{% block footer %}
+  <div class="nav">
+    <a href="{{contents.index.url}}">&laquo; Full blog</a>
+  </div>
+{% endblock footer %}
