@@ -1,8 +1,8 @@
-{% macro author(authorName) %}
-  {% set author = authors[authorName + '.json'] %}
+{% macro author(authors, authorName) %}
+  {% set auth = authors[authorName + ".json"] %}
   <span class="author">
-      {% if author %}
-        <a href="mailto:{{author.metadata.email}}">{{author.metadata.name}}</a> 
+      {% if auth %}
+        <a href="mailto:{{auth.metadata.email}}">{{auth.metadata.name}}</a> 
       {% else %}
         {{authorName}}
       {% endif %}
