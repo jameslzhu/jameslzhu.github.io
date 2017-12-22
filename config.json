@@ -21,7 +21,10 @@
     "smartLists": true,
     "smartypants": true
   },
-  "nunjucks": {},
+  "nunjucks": {
+    "filterdir": "filters",
+    "filters": ["keys", "year", "month", "yearheight"]
+  },
   "livereload": {},
   "paginator": {
     "perPage": 3

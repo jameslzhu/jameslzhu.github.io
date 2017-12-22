@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 {% block vars %}
-  {% set bodyclass = null %}
 {% endblock vars %}
-
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -11,7 +9,7 @@
     <title>
       {% block title %}
         {{name}}
-      {% endblock title %}
+      {% endblock %}
     </title>
     <link rel="alternate" href="{{url}}/feed.xml" type="application/rss+xml" title="{{description}}">
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic|Anonymous+Pro:400,700,400italic,700italic|Merriweather:400,700,300">
@@ -44,7 +42,7 @@
           <section class="copy">
             <p>&copy; 2017  &mdash; powered by&nbsp;<a href="https://github.com/jnordberg/wintersmith">Wintersmith</a></p>
           </section>
-        {% endblock footer %}
+        {% endblock %}
       </div>
     </footer>
   </body>
