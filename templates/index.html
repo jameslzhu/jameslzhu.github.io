@@ -20,6 +20,7 @@
 {% endblock %}
 
 {% block footer %}
+  {{super()}}
   <div class="nav">
     {% if prevPage %}
       <a href="{{prevPage.url}}">&laquo; Newer</a>
