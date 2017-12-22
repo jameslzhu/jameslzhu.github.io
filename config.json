@@ -25,6 +25,7 @@
     "filterdir": "filters",
     "filters": ["keys", "year", "month", "yearheight"]
   },
+  "sass": {},
   "livereload": {},
   "paginator": {
     "perPage": 3

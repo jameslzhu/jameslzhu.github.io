@@ -12,8 +12,7 @@
       {% endblock %}
     </title>
     <link rel="alternate" href="{{url}}/feed.xml" type="application/rss+xml" title="{{description}}">
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic|Anonymous+Pro:400,700,400italic,700italic|Merriweather:400,700,300">
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/styles/main.css">
     <!-- livereload.js injection -->
     {{ env.helpers.livereload() | safe }}
   </head>
@@ -40,7 +39,7 @@
               {{ contents['about.md'].html }}
           </section>
           <section class="copy">
-            <p>&copy; 2017  &mdash; powered by&nbsp;<a href="https://github.com/jnordberg/wintersmith">Wintersmith</a></p>
+            <p>&copy; James Zhu, 2017  &mdash; powered by&nbsp;<a href="https://github.com/jnordberg/wintersmith">Wintersmith</a></p>
           </section>
         {% endblock %}
       </div>

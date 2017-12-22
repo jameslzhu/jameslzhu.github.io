@@ -2,6 +2,7 @@
   "dependencies": {
     "lodash": "^4.17.4",
     "moment": "^2.11.x",
+    "tachyons-sass": "^4.9.0",
     "typogr": "^0.6.x",
     "wintersmith-livereload": "^1.0.0",
     "wintersmith-nunjucks": "^2.0.0",
