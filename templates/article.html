@@ -13,7 +13,7 @@
 {% block header %}
   {% from "author.html" import author %}
   <h1>{{page.title}}</h1>
-  <p class="author">Written by {{author(page.metadata.author)}} </p>
+  <p class="author">Written by {{author(contents.authors, page.metadata.author)}} </p>
 {% endblock %}
 
 {% block content %}
