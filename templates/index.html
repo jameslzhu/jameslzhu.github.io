@@ -1,9 +1,7 @@
 {% extends "layout.html" %}
 
 {% block content %}
-<p>Hi.</p>   
-{% endblock %}
-
-{% block footer %}
-  {{super()}}
+  <section class="content">
+    {{ typogr(contents['index.md'].html).typogrify() }}
+  </section>
 {% endblock %}
