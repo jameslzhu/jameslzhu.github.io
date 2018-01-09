@@ -1,7 +1,7 @@
 {
   "output": "../jzhu98.github.io",
   "locals": {
-    "url": "http://localhost:8080",
+    "url": "https://www.jameszhu.io/",
     "name": "James Zhu",
     "owner": "James Zhu",
     "description": ""
@@ -25,7 +25,9 @@
     "filterdir": "filters",
     "filters": ["keys", "year", "month", "yearheight"]
   },
-  "sass": {},
+  "sass": {
+    "includePaths": ["./node_modules/tachyons-sass"]
+  },
   "livereload": {},
   "paginator": {
     "perPage": 3

@@ -1,6 +1,8 @@
 // _base.scss
 
-@import url('https://fonts.googleapis.com/css?family=Fira+Mono|Lora:400,700|Merriweather:400');
+@import url("https://fonts.googleapis.com/css?family=Fira+Mono|Lora:400,700|Merriweather:400");
+
+@import "tachyons.scss";
 
 h1, h2, h3, h4, h5, h6, p, body, a, img, ul, ol, blockquote, pre {
   margin: 0; padding: 0; border: 0;
@@ -9,22 +11,18 @@ h1, h2, h3, h4, h5, h6, p, body, a, img, ul, ol, blockquote, pre {
 body {
   font-family: 'Lora', serif;
   font-size: 21px;
-  line-height: 1.52;
-  background-color: #f8f8f8;
+  line-height: 1.5;
+  background-color: $white;
   text-rendering: optimizeLegibility;
-}
-
-.content-wrap {
-  width: 34em;
   margin: 0 auto;
 }
 
 body, a {
-  color: #171717;
+  color: $near-black;
 }
 
 a:hover {
-  color: #ff8000;
+  color: $blue;
   text-decoration: underline;
 }
 
@@ -43,6 +41,7 @@ pre {
 }
 
 h1 {
+  @extend .f1;
   font-size: 2em;
   margin-bottom: 1em;
 }
