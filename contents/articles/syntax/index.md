@@ -8,7 +8,7 @@ template: article.html
 Syntax highlighting with [highlight.js](https://highlightjs.org/).
 The theme used is tomorrow, you can find more themes [here](https://highlightjs.org/static/demo/).
 
-<span class="more"></span>
+---
 
 ### JavaScript
 
@@ -23,7 +23,7 @@ function getRandomNumber() {
 
 ```coffeescript
 class Animal
-  ### Intellegent design ###
+  ### Intelligent design ###
   getDNA: ->
     print 'sequencing...'
     while true

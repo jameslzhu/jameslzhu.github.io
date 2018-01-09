@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>
       {% block title %}
         {{name}}
@@ -16,33 +16,27 @@
     <!-- livereload.js injection -->
     {{ env.helpers.livereload() | safe }}
   </head>
-  <body>
+  <body class="measure-wide">
     <header class="header">
-      <div class="content-wrap">
-        {% block header %} 
-          <div class="logo">
-            <h1><a href="{{url}}">{{name}}</a></h1>
-            <p class="description">{{description}}</p>
-          </div>
-        {% endblock %}
-      </div>
+      {% block header %} 
+        <div class="logo">
+          <h1><a href="{{baseUrl}}">{{name}}</a></h1>
+          <p class="description">{{description}}</p>
+        </div>
+      {% endblock %}
     </header>
     <div id="content">
-      <div class="content-wrap">
-        {% block content %}{% endblock %}
-      </div>
+      {% block content %}{% endblock %}
     </div>
     <footer>
-      <div class="content-wrap">
-        {% block footer %}
-          <section class="about">
-              {{ contents['about.md'].html }}
-          </section>
-          <section class="copy">
-            <p>&copy; James Zhu, 2017  &mdash; powered by&nbsp;<a href="https://github.com/jnordberg/wintersmith">Wintersmith</a></p>
-          </section>
-        {% endblock %}
-      </div>
+      {% block footer %}
+        <section class="about">
+            {{ contents['about.md'].html }}
+        </section>
+        <section class="copy">
+          <p>&copy; James Zhu, 2017  &mdash; built with&nbsp;<a href="https://github.com/jnordberg/wintersmith">Wintersmith</a></p>
+        </section>
+      {% endblock %}
     </footer>
   </body>
 </html>

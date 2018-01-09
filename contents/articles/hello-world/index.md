@@ -7,7 +7,9 @@ template: article.html
 
 Welcome to your blog! This is the default blog template with RSS, pagination and an archive. There are other templates available -- run `wintersmith new --help` to list them.
 
-## _Repeat after me:_ This is my blog. There are many like it, but this one is mine. My blog is my best friend. It is my life. I must master it as I must master my life. My blog, without me, is useless. Without my blog, I am useless.
+---
+
+**Repeat after me:** This is my blog. There are many like it, but this one is mine. My blog is my best friend. It is my life. I must master it as I must master my life. My blog, without me, is useless. Without my blog, I am useless.
 
 Good, now, the directory structure of your blog is as follows:
 
@@ -72,7 +74,7 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 ```
 
-## Links in the markdown to other items in the content tree will be resolved for you.
+Links in the markdown to other items in the content tree will be resolved for you.
 
 For example a link to `../bamboo-cutter/index.md` resolves to [`/articles/bamboo-cutter/`](../bamboo-cutter/index.md).
 
