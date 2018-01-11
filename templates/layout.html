@@ -27,12 +27,10 @@
       {% block content %}{% endblock %}
     </div>
     <footer>
+      <hr>
       {% block footer %}
-        <section class="about">
-          {{ contents['about.md'].html }}
-        </section>
         <section class="copy">
-          <p>&copy; James Zhu, 2017  &mdash; built with&nbsp;<a href="https://github.com/jnordberg/wintersmith">Wintersmith</a></p>
+          <p>Built with <a href="https://github.com/jnordberg/wintersmith">Wintersmith</a></p>
         </section>
       {% endblock %}
     </footer>
