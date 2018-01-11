@@ -1,9 +1,21 @@
 // main.scss
 
+// tachyons-css
+@import 'scss/normalize';
+@import 'scss/media-queries';
+
+@import 'scss/colors';
+@import 'scss/line-height';
+@import 'scss/typography';
+@import 'scss/type-scale';
+@import 'scss/letter-spacing';
+
+// main
 @import 'base';
 @import 'header';
 @import 'footer';
+@import 'code';
 
+// pages
 @import 'article';
 @import 'archive';
-@import 'code';
