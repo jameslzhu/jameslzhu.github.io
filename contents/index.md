@@ -17,11 +17,11 @@ Github: [jzhu98][github]
 Linkedin: [jameslzhu][linkedin]  
 Keybase (GPG): [jzhu][keybase]
 
-## Projects
+<!-- ## Projects
 
 ## Experiments
 
-## Notes
+## Notes -->
 
 [email]: mailto:jameszhu@berkeley.edu
 [resume]: https://jameszhu.io/resume.pdf

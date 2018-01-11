@@ -1,5 +1,7 @@
 /* code styling */
 
+@import 'code-theme';
+
 code {
   font-family: 'Fira Mono', monospace;
   font-size: 0.85em;
@@ -47,5 +49,3 @@ code.lang-markdown .blockquote,
 code.lang-markdown .bullet {
   color: #bbb;
 }
-
-@import 'code-theme';
