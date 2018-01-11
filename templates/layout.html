@@ -10,14 +10,15 @@
       {% block title %}{{name}}{% endblock %}
     </title>
     <link rel="alternate" href="{{url}}/feed.xml" type="application/rss+xml" title="{{description}}">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Mono|Lato|Source+Sans+Pro:400+700" rel="stylesheet"> 
     <link rel="stylesheet" href="/styles/main.css">
     {{ env.helpers.livereload() | safe }}
   </head>
-  <body class="measure-wide">
+  <body class="{{bodyclass}}">
     <header class="header">
       {% block header %} 
         <div class="logo">
-          <h1><a href="{{url}}">{{name}}</a></h1>
+          <h1 class="title"><a href="{{url}}">{{name}}</a></h1>
           <p class="description">{{description}}</p>
         </div>
       {% endblock %}

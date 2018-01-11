@@ -78,6 +78,52 @@ Links in the markdown to other items in the content tree will be resolved for yo
 
 For example a link to `../bamboo-cutter/index.md` resolves to [`/articles/bamboo-cutter/`](../bamboo-cutter/index.md).
 
+# Heading 1
+
+Text 1
+
+## Heading 2
+
+Text 2
+
+### Heading 3
+
+Text 3
+
+#### Heading 4
+
+Ordered list:
+
+1. Do stuff
+2. ...
+3. ???
+4. Profit!
+
+Unordered list:
+
+- Fix me
+- Squash bugs
+- Do all the things
+
+Blockquote:
+
+> Hello! This is a quote! Lorem ipsum
+> Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+> Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+> Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+> Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+> Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+> Lorem ipsum
+> Lorem ipsum
+> Lorem ipsum
+> Lorem ipsum
+> Lorem ipsum
+> Lorem ipsum
+> Lorem ipsum
+> Lorem ipsum
+> Lorem ipsum
+> Lorem ipsum
+
 ---
 
 This is where I leave you to your own devices. Join **#wintersmith** on freenode if you have any questions.

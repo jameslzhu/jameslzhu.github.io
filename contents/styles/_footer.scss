@@ -1,13 +1,8 @@
 // _footer.scss
 
 footer {
-  margin: 3em 0;
-}
-
-footer .nav {
   text-align: center;
-  margin-top: 5em;
-  margin-bottom: 3.5em;
+  margin: 3em 0;
 }
 
 footer .nav a {
@@ -17,7 +12,6 @@ footer .nav a {
 }
 
 footer .about {
-  text-align: center;
   border-top: 1px dashed #d2d2d2;
   padding: 2.2em 3em;
   font-size: 0.7em;
@@ -32,11 +26,31 @@ footer .about {
 }
 
 footer .copy {
-  text-align: center;
   font-size: 0.7em;
   margin-top: 1em;
 }
 
 footer .copy, footer .copy a {
   color: #8e8e8e;
+}
+
+@media (max-width: 690px) {
+  footer {
+    .nav {
+      margin: 1em 0;
+    }
+    .about {
+      padding: 0;
+      font-size: 0.9em;
+      padding-top: 1.6em;
+      -webkit-column-count: 1;
+      -moz-column-count: 1;
+      -ms-column-count: 1;
+      column-count: 1;
+    }
+
+    .about p {
+      margin-bottom: 1em;
+    }
+  }
 }

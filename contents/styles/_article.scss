@@ -1,18 +1,15 @@
 /* article */
 
 .article {
-  margin: 3em 0 4em;
+  margin: 2em 0 2em;
 }
 
 .article header {
-  border-top: 1px dashed #d2d2d2;
+  border-top: 1px solid $light-silver;
 }
 
 .article header h2 {
   text-align: center;
-  font-weight: bold;
-  margin: 0.8em 0;
-  font-size: 1.4em;
 }
 
 .article header h2 a {
@@ -20,14 +17,14 @@
 }
 
 .article header .date {
+  @extend .f6;
   text-align: center;
-  font-size: 0.8em;
   margin-top: -0.7em;
 }
 
 .article header .date span {
-  background-color: #f8f8f8;
-  padding: 0 0.7em;
+  background-color: $light-gray;
+  padding: 0 1em;
 }
 
 .article.intro .content p {
@@ -46,10 +43,13 @@
 }
 
 .more, .date {
-  font-family: 'Merriweather', serif;
   font-variant: small-caps;
   text-transform: lowercase;
-  font-weight: 400;
-  text-rendering: auto;
-  letter-spacing: 1px;
+  letter-spacing: 0.1em;
+}
+
+@media (max-width: 690px) {
+  .article {
+    margin: 1em 0 2.5em;
+  }
 }
