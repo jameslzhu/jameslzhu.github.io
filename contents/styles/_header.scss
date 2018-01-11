@@ -1,35 +1,29 @@
 // _header.scss
 
 .header {
-  margin: 3em 0 5em;
+  text-align: center;
+  margin: 3em auto 2em;
+  color: $near-black;
 }
 
 .header h1 {
-  font-size: 2.6em;
-  text-align: center;
-  font-weight: 700;
   margin: 0;
 }
 
 .header a, .header a:hover {
   text-decoration: none;
-  color: #171717;
 }
 
 .header .author {
-  font-family: 'Merriweather', serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-variant: small-caps;
   text-transform: lowercase;
-  text-rendering: auto;
-  text-align: center;
-  font-weight: 400;
   letter-spacing: 1px;
 }
 
 .header .description {
   font-size: 1.2em;
   font-style: italic;
-  text-align: center;
   margin-top: -0.3em;
 }
 
@@ -42,4 +36,16 @@ body.article-detail > header h1 {
 
 body.article-detail > header {
   margin-bottom: 3em;
+}
+
+@media (max-width: 690px) {
+  .header {
+    margin: 1em 0;
+  }
+  .header h1 {
+    margin-bottom: 0.6em;
+  }
+  .header .description {
+    font-size: 1em;
+  }
 }

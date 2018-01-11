@@ -3,21 +3,22 @@
 @import 'code-theme';
 
 code {
+  @extend .f7;
   font-family: 'Fira Mono', monospace;
-  font-size: 0.85em;
-  color: #000;
 }
 
+// Code blocks
 pre code {
   display: block;
   line-height: 1.1;
 }
 
+// Inline code
 p code {
   padding: 0.1em 0.3em 0.2em;
   border-radius: 0.3em;
   position: relative;
-  background: #fffff3;
+  background: $white;
 
   white-space: nowrap;
 }
@@ -25,7 +26,7 @@ p code {
 /* syntax hl stuff */
 
 code.lang-markdown {
-  color: #424242;
+  color: $dark-gray;
 }
 
 code.lang-markdown .header,

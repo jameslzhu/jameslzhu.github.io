@@ -5,7 +5,7 @@
   {% set archives = env.helpers.getArticles(contents) | year %}
   {% set month_names = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'] %}
   <section class="archive">
-    <h2>Archive</h2>
+    <h2 class="archive-title">Archive</h2>
     <ul>
       {% set yearsK = archives | keys | reverse %}
       {% for yearK in yearsK %}

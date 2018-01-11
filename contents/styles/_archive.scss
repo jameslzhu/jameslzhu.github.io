@@ -2,19 +2,16 @@
 
 .archive {
   width: 32em;
-  margin: 5em auto 6em;
-  padding-left: 2em;
+  margin: auto;
 }
 
-.archive h2 {
-  font-size: 2em;
-  margin: 0;
-  margin-left: 6.1em;
+.archive-title {
+  @extend .f3;
   margin-bottom: 0.5em;
-  font-style: italic;
+  text-align: center;
 }
 
-.archive a, .archive span{
+.archive a, .archive span {
   display: block;
   float: left;
   margin-bottom: -1px;
@@ -39,7 +36,7 @@
 .archive .year-label,
 .archive .month-label{
   width: 4em;
-  font-family: 'Merriweather', serif;
+  font-family: 'Lato', serif;
   font-variant: small-caps;
   text-transform: lowercase;
   font-weight: 400;
@@ -59,4 +56,20 @@
 
 .archive ul li {
   margin: 0;
+}
+
+@media (max-width: 690px) {
+  .archive {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .archive * {
+    float: none !important;
+    line-height: 1.6 !important;
+    width: auto !important;
+    height: auto !important;
+    text-align: left !important;
+    border: 0 !important;
+    margin: 0 !important;
+  }
 }
