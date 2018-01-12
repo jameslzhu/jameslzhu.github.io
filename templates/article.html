@@ -8,21 +8,25 @@
 {% block header %}
   {% from "author.html" import author %}
   <header class="black tc mt4 mb2">
+    <!-- title -->
     <h1 class="mv2">{{page.title}}</h1>
-    <p class="small-caps ttl f4 mv2">Written by {{author(contents.authors, page.metadata.author)}}</p>
+    <!-- author / date -->
+    <p class="small-caps ttl f4 mv2">
+      Written by {{author(contents.authors, page.metadata.author)}} &mdash;
+      Published {{moment.utc(article.date).format('DD MMM YYYY')}}
+    </p>
   </header>
 {% endblock %}
 
 {% block content %}
-  <article class="measure">
+  <article class="center">
     {{typogr(page.html).typogrify()}}
   </article>
 {% endblock %}
 
 {% block footer %}
-  <footer class="tc mv4">
-    <nav>
-      <a class="no-underline" href="{{contents.index.url}}">&laquo; Full blog</a>
-    </nav>
-  </footer>
+  <nav class="tc">
+    <a class="no-underline" href="{{contents.index.url}}">&laquo; Full blog</a>
+  </nav>
+  {{super()}}
 {% endblock %}
