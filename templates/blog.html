@@ -3,33 +3,39 @@
 {% block content %}
   {% set articles = env.helpers.getArticles(contents) %}
   {% for article in articles %}
-    <article class="article intro">
-      <header>
-        <p class="date"><span>{{moment.utc(article.date).format('DD. MMMM YYYY')}}</span></p>
-        <h2><a href="{{article.url}}">{{article.title}}</a></h2>
-      </header>
-      <section class="content">
-        {% if article.intro.length > 0 %}
-          {{typogr(article.intro).typogrify()}} 
-        {% endif %}
+  <article>
+    <header class="bt b--silver mt4">
+      <!-- date -->
+      <p class="f6 tc small-caps ttu" style="margin-top: -0.75em">
+        <span class="pa1 bg-light-gray">{{moment.utc(article.date).format('DD MMM YYYY')}}</span>
+      </p>
+      <!-- article header -->
+      <h2 class="tc">
+        <a class="no-underline" href="{{article.url}}">{{article.title}}</a>
+      </h2>
+    </header>
+    <section class="db">
+      {% if article.intro.length > 0 %}
+        {{typogr(article.intro).typogrify()}} 
         {% if article.hasMore %}
-          <p class="more"><a href="{{article.url}}">more</a></p>        
+          <p class="small-caps"><a href="{{article.url}}">more</a></p>
         {% endif %}
-      </section>
-    </article> 
+      {% endif %}
+    </section>
+  </article> 
   {% endfor %}
 {% endblock %}
 
 {% block footer %}
-  <div class="nav">
+  <nav class="ph2 f4">
     {% if prevPage %}
-      <a href="{{prevPage.url}}">&laquo; Newer</a>
+      <a class="no-underline" href="{{prevPage.url}}">&laquo; Newer</a>
     {% else %}
-      <a href="/archive.html">&laquo; Archives</a>
+      <a class="no-underline" href="/archive.html">&laquo; Archives</a>
     {% endif %}
     {% if nextPage %}
-      <a href="{{nextPage.url}}">Next page &raquo;</a>
+      <a class="no-underline" href="{{nextPage.url}}">Next page &raquo;</a>
     {% endif %}
-  </div>
+  </nav>
   {{super()}}
 {% endblock %}

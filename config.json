@@ -3,8 +3,7 @@
   "locals": {
     "url": "https://www.jameszhu.io/",
     "name": "James Zhu",
-    "owner": "James Zhu",
-    "description": ""
+    "owner": "James Zhu"
   },
   "plugins": [
     "./plugins/paginator.coffee",
@@ -26,7 +25,7 @@
     "filters": ["keys", "year", "month", "yearheight"]
   },
   "sass": {
-    "includePaths": ["./node_modules/tachyons-sass"]
+    "includePaths": ["./node_modules/"]
   },
   "livereload": {},
   "paginator": {

@@ -1,34 +1,33 @@
 {% extends "layout.html" %} 
 
 {% block content %}
-  {% set lineHeight = 2.2 %}
-  {% set archives = env.helpers.getArticles(contents) | year %}
-  {% set month_names = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'] %}
-  <section class="archive">
-    <h2 class="archive-title">Archive</h2>
-    <ul>
-      {% set yearsK = archives | keys | reverse %}
-      {% for yearK in yearsK %}
-        {% set months = archives[yearK] | month %}
-        {% set yearHeight = months | yearheight(lineHeight) %}
-        <li>
-          <span class="year-label" style="line-height:{{yearHeight}}em">{{yearK}}</span>
-          <ul style='margin-left:4em'>
-            {% set monthsK = months | keys | reverse %}
-            {% for monthK in monthsK %}
-              {% set monthHeight = lineHeight * months[monthK].length %}
-              <li>
-                <span class="month-label" style="line-height:{{monthHeight}}em">{{month_names[monthK]}}</span>
-                <ul style="margin-left: 7em">
-                  {% for item in months[monthK] %}
-                    <li style="height:{{lineHeight}}em;line-height:{{lineHeight}}em"><a href="{{item.url}}">{{item.title}}</a></li>
-                  {% endfor %}
-                </ul>
-              </li>
-            {% endfor %}
-          </ul>
-        </li>
-      {% endfor %}
-    </ul>
-  </section>
+{% set articles = env.helpers.getArticles(contents) | year %}
+{% set month_names = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'] %}
+<section class="archive">
+  <h2 class="f3 mb2 tc">Archive</h2>
+  <ul class="list f4 ma0-ns lh-tall">
+    {% set yearsK = articles | keys | reverse %}
+    {% for yearK in yearsK %}
+      {% set months = articles[yearK] | month %}
+      <li class="bb-ns b--moon-gray v-mid">
+        <span class="db fl-ns w2-ns tc-ns v-mid" >{{yearK}}</span>
+        <ul class="list ml0 ml4-ns">
+          {% set monthsK = months | keys | reverse %}
+          {% for monthK in monthsK %}
+            <li>
+              <span class="db fl-ns w4-ns tc-ns ttl small-caps" >{{month_names[monthK]}}</span>
+              <ul class="list ml5-ns">
+                {% for item in months[monthK] %}
+                  <li class="w-auto truncate">
+                    <a href="{{item.url}}">{{item.title}}</a>
+                  </li>
+                {% endfor %}
+              </ul>
+            </li>
+          {% endfor %}
+        </ul>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
 {% endblock %}

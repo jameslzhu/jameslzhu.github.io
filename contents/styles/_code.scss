@@ -4,7 +4,7 @@
 
 code {
   @extend .f7;
-  font-family: 'Fira Mono', monospace;
+  @extend .font-code;
 }
 
 // Code blocks
