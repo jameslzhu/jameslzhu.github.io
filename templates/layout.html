@@ -14,9 +14,9 @@
 </head>
 <body>
   {% block header %} 
-    <header class="black tc mt4 mb3">
+    <header class="tc mt4 mb3">
       <div class="logo">
-        <h1><a class="no-underline" href="{{url}}">{{name}}</a></h1>
+        <h1 class="black f1"><a class="no-underline" href="{{url}}">{{name}}</a></h1>
       </div>
     </header>
   {% endblock %}
@@ -24,13 +24,13 @@
     {% block content %}{% endblock %}
   </main>
   <hr>
+  <footer class="tc mv4">
   {% block footer %}
-    <footer class="tc mv3">
       <!-- copy -->
       <section class="f6">
         <p class="dark-gray">Built with <a class="dark-gray" href="https://github.com/jnordberg/wintersmith">Wintersmith</a></p>
       </section>
-    </footer>
   {% endblock %}
+  </footer>
 </body>
 </html>

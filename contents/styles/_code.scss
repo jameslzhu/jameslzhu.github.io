@@ -3,14 +3,14 @@
 @import 'code-theme';
 
 code {
-  @extend .f7;
+  @extend .f6;
   @extend .font-code;
 }
 
 // Code blocks
 pre code {
   display: block;
-  line-height: 1.1;
+  line-height: 1.25;
 }
 
 // Inline code

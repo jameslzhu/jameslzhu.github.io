@@ -6,7 +6,7 @@
   <article>
     <header class="bt b--silver mt4">
       <!-- date -->
-      <p class="f6 tc small-caps ttu" style="margin-top: -0.75em">
+      <p class="f5 tc small-caps ttu" style="margin-top: -0.75em">
         <span class="pa1 bg-light-gray">{{moment.utc(article.date).format('DD MMM YYYY')}}</span>
       </p>
       <!-- article header -->
@@ -27,7 +27,7 @@
 {% endblock %}
 
 {% block footer %}
-  <nav class="ph2 f4">
+  <nav class="tc mv2">
     {% if prevPage %}
       <a class="no-underline" href="{{prevPage.url}}">&laquo; Newer</a>
     {% else %}
