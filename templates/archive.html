@@ -4,8 +4,8 @@
 {% set articles = env.helpers.getArticles(contents) | year %}
 {% set month_names = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'] %}
 <section class="archive">
-  <h2 class="f3 mb2 tc">Archive</h2>
-  <ul class="list f4 ma0-ns lh-tall">
+  <h2 class="tc">Archive</h2>
+  <ul class="list ma0-ns" style="line-height: 2">
     {% set yearsK = articles | keys | reverse %}
     {% for yearK in yearsK %}
       {% set months = articles[yearK] | month %}
