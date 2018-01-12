@@ -6,8 +6,8 @@ I'm learning to build things. Someday they may make the world better.
 
 I'm a second-year EECS student at UC Berkeley, and a FIRST Robotics alumni.
 
-I think about ways to make learning more compelling, to use game design outside of
-games, to make the unimaginable visual, and to understand the impossible.
+<!-- I think about ways to make learning more compelling, to use game design outside of -->
+<!-- games, to make the unimaginable visual, and to understand the impossible. -->
 
 **Contact**
 
