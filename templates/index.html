@@ -1,7 +1,5 @@
 {% extends "layout.html" %}
 
 {% block content %}
-  <section class="content">
-    {{ typogr(contents['index.md'].html).typogrify() }}
-  </section>
+  {{ typogr(contents['index.md'].html).typogrify() }}
 {% endblock %}

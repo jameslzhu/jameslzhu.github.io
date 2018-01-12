@@ -1,32 +1,39 @@
 // _base.scss
 
-html {
-  font-size: 150%;
-}
-
 body {
+  font-size: 100%;
+
+  @media #{$breakpoint-medium} {
+    font-size: 125%;
+  }
+
+  @media #{$breakpoint-large} {
+    font-size: 150%;
+  }
+
+  text-rendering: optimizeLegibility;
+
   @extend .f5;
   @extend .lh-copy;
-  @extend .measure-wide;
-  font-family: 'Lato', sans-serif;
-  background-color: $white;
-  text-rendering: optimizeLegibility;
-  margin: 0 auto;
+  @extend .measure-narrow;
+  @extend .measure-m;
+  @extend .measure-wide-l;
+  @extend .center;
+  @extend .font-body;
 }
 
 a {
-  color: $black;
+  @extend .black;
 }
 
 a:hover {
-  color: $dark-blue;
-  text-decoration: underline;
+  @extend .dark-blue;
+  @extend .underline;
 }
 
 pre {
   @extend .f6;
   overflow: auto;
-  background: $white;
   border: 1px solid $moon-gray;
   border-radius: 0.25em;
   padding: 1em;
@@ -35,6 +42,7 @@ pre {
 h1 {
   @extend .f2;
   @extend .lh-title;
+  @extend .mv3;
 }
 
 h2 {
@@ -47,22 +55,4 @@ h3 {
 
 blockquote {
   font-style: italic;
-}
-
-@media (max-width: 900px) {
-  html {
-    font-size: 125%;
-  }
-  body {
-    max-width: 30em;
-  }
-}
-
-@media (max-width: 690px) {
-  html {
-    font-size: 100%;
-  }
-  body {
-    max-width: 20em;
-  }
 }
