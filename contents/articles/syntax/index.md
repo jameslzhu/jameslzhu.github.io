@@ -74,6 +74,26 @@ class ExampleClass
 }
 ```
 
+### CSS
+
+```css
+@font-face {
+  font-family: Chunkfive; src: url('Chunkfive.otf');
+}
+
+body, .usertext {
+  color: #F0F0F0; background: #600;
+  font-family: Chunkfive, sans;
+}
+
+@import url(print.css);
+@media print {
+  a[href^=http]::after {
+    content: attr(href)
+  }
+}
+```
+
 ### Erlang
 
 ```erlang
@@ -123,6 +143,8 @@ int main(void)
 ### Python
 
 ```python
+import antigravity
+
 print("Hello World")
 ```
 
