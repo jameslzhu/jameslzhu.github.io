@@ -22,7 +22,7 @@
   },
   "nunjucks": {
     "filterdir": "filters",
-    "filters": ["keys", "year", "month", "yearheight"]
+    "filters": ["keys", "year", "month"]
   },
   "sass": {
     "includePaths": ["./node_modules/"]

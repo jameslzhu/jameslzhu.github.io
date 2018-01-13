@@ -1,6 +1,6 @@
 // _base.scss
 
-body {
+html {
   font-size: 100%;
 
   @media #{$breakpoint-not-small} {
@@ -8,13 +8,9 @@ body {
   }
 
   text-rendering: optimizeLegibility;
+}
 
-  @extend .f5;
-  @extend .lh-copy;
-  @extend .measure-narrow;
-  @extend .measure-m;
-  @extend .measure-wide-l;
-  @extend .center;
+p, ul, ol {
   @extend .font-body;
 }
 
@@ -28,16 +24,22 @@ a:hover {
 }
 
 pre {
-  @extend .f5;
   overflow: auto;
-  border: 1px solid $moon-gray;
+  @extend .ba;
+  @extend .b--moon-gray;
+  // border: 1px solid $moon-gray;
   border-radius: 0.25em;
-  padding: 1em;
+  @extend .pa3;
+  // padding: 1em;
+}
+
+h1, h2, h3, h4 {
+  @extend .font-title;
+  @extend .lh-title;
 }
 
 h1 {
   @extend .f2;
-  @extend .lh-title;
   @extend .mv3;
 }
 
@@ -49,6 +51,60 @@ h3 {
   @extend .f4;
 }
 
+h4 {
+  @extend .f5;
+}
+
 blockquote {
   font-style: italic;
+}
+
+code {
+  @extend .font-code;
+}
+
+// Code blocks
+pre code {
+  @extend .f6;
+  @extend .f7-ns;
+  @extend .db;
+  line-height: 1.25;
+}
+
+// Inline code
+p code {
+  @extend .f6;
+  @extend .ph1;
+  @extend .br1;
+  @extend .bg-near-white;
+  // background: $near-white;
+  white-space: nowrap;
+}
+
+/* syntax hl stuff */
+
+code.lang-markdown {
+  @extend .dark-gray;
+}
+
+code.lang-markdown .header,
+code.lang-markdown .strong {
+  font-weight: bold;
+}
+
+code.lang-markdown .emphasis {
+  font-style: italic;
+}
+
+code.lang-markdown .horizontal_rule,
+code.lang-markdown .link_label,
+code.lang-markdown .code,
+code.lang-markdown .header,
+code.lang-markdown .link_url {
+  color: #555;
+}
+
+code.lang-markdown .blockquote,
+code.lang-markdown .bullet {
+  color: #bbb;
 }

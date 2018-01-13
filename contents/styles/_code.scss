@@ -1,52 +1,35 @@
-/* code styling */
-
-@import 'code-theme';
-
-code {
-  @extend .f6;
-  @extend .font-code;
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+.tomorrow-comment, pre .comment, pre .title {
+  color: #8e908c;
 }
 
-// Code blocks
-pre code {
-  display: block;
-  line-height: 1.25;
+.tomorrow-red, pre .variable, pre .attribute, pre .tag, pre .regexp, pre .ruby .constant, pre .xml .tag .title, pre .xml .pi, pre .xml .doctype, pre .html .doctype, pre .css .id, pre .css .class, pre .css .pseudo {
+  color: #c82829;
 }
 
-// Inline code
-p code {
-  padding: 0.1em 0.3em 0.2em;
-  border-radius: 0.3em;
-  position: relative;
-  background: $white;
-
-  white-space: nowrap;
+.tomorrow-orange, pre .number, pre .preprocessor, pre .built_in, pre .literal, pre .params, pre .constant {
+  color: #f5871f;
 }
 
-/* syntax hl stuff */
-
-code.lang-markdown {
-  color: $dark-gray;
+.tomorrow-yellow, pre .class, pre .ruby .class .title, pre .css .rules .attribute {
+  color: #eab700;
 }
 
-code.lang-markdown .header,
-code.lang-markdown .strong {
-  font-weight: bold;
+.tomorrow-green, pre .string, pre .value, pre .inheritance, pre .header, pre .ruby .symbol, pre .xml .cdata {
+  color: #718c00;
 }
 
-code.lang-markdown .emphasis {
-  font-style: italic;
+.tomorrow-aqua, pre .css .hexcolor {
+  color: #3e999f;
 }
 
-code.lang-markdown .horizontal_rule,
-code.lang-markdown .link_label,
-code.lang-markdown .code,
-code.lang-markdown .header,
-code.lang-markdown .link_url {
-  color: #555;
+.tomorrow-blue, pre .function, pre .python .decorator, pre .python .title, pre .ruby .function .title, pre .ruby .title .keyword, pre .perl .sub, pre .javascript .title, pre .coffeescript .title {
+  color: #4271ae;
 }
 
-code.lang-markdown .blockquote,
-code.lang-markdown .bullet {
-  color: #bbb;
+.tomorrow-purple, pre .keyword, pre .javascript .function {
+  color: #8959a8;
 }

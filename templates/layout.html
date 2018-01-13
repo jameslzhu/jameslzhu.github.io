@@ -12,11 +12,11 @@
   <link rel="stylesheet" href="/styles/main.css">
   {{ env.helpers.livereload() | safe }}
 </head>
-<body>
+<body class="lh-copy measure-narrow measure-m measure-wide-l center">
   {% block header %} 
     <header class="tc mt4 mb3">
       <div class="logo">
-        <h1 class="black f1"><a class="no-underline" href="{{url}}">{{name}}</a></h1>
+        <h1><a class="no-underline" href="{{url}}">{{name}}</a></h1>
       </div>
     </header>
   {% endblock %}
