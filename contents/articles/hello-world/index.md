@@ -63,6 +63,8 @@ date: 2012-12-12 12:12
 
 This will be shown as the article excerpt.
 
+**bold** text. *italic* text.
+
 ## A h2, hr or <span class="more"> marks where the intro cuts off
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
