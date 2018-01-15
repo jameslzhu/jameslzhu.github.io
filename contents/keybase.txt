@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/jzhu
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://www.jameszhu.io
+  * I am jzhu (https://keybase.io/jzhu) on keybase.
+  * I have a public key with fingerprint 08D7 31B1 4283 7F50 C828  C9A3 2412 2C3A 8D7C AC3B
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01206533b0be76c6183bababce6e21b0be1a7dcfe68df3fa10d75415bc2f1d908ec40a",
+      "fingerprint": "08d731b142837f50c828c9a324122c3a8d7cac3b",
+      "host": "keybase.io",
+      "key_id": "24122c3a8d7cac3b",
+      "kid": "0101ea5c36d3a9bfb67d62ff82ad3a718f2abc33081c69dfa88566da3bde383b82b80a",
+      "uid": "971f22408b9718ccb39bf7e4420a3d19",
+      "username": "jzhu"
+    },
+    "service": {
+      "hostname": "www.jameszhu.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1515991689,
+  "expire_in": 157680000,
+  "prev": "7cc3c894d798c638b11f99f2e7b9ddefb8d3580c0582f9b266ea3cc796476c50",
+  "seqno": 24,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+
+owFtUm1oFEcYvtRE0tNgUGtFEe2iYuTQnZnd2dlVVOIHalsaU0Tx6zpfm9vE7m1u
+L5dojILFSFrE81QojUikmlAUQc/Qqn9a0CYasVSFmIqgPwxK/hTE0h8izp7mnzs/
+duZ5n/eZ5xnefNWEWLxs/tSEc2TfhWVlQy9YbNsOmG/XWFrs0Zx2rUmWfnK3kGE2
+2eQJzdF0AHVsIsR0Ji3MMSCIUbW4xBKCCAXUEtyVmAgXuRTowjINYDIOXSBsnUhu
+6FRLaK7nN8hMkPH8bCRLhIUAAwYkyHJNnRNIuE0RNACEHFFV5pQjphpT6TDqUOYY
+DeUSL60wdUiW7H2AP+5bB5KaHGGBqM1chi2BoesSSBVgAeJCFQIhnQCObeFSQkyM
+BUVMSKQyEshIyXdLSc62gAuhoROmdoRzhpSmJQ0D6hQJYEfEUGZ8+q1U7Ma9qRat
+I6EpJOdxGT1qlOJ9tbW1dUmj2oaK9S5OkEln0zy9WxVT2WwQOlFzdk9QYkuWfK+T
+ZJ4v1DOqjpzMhF7a1xygmDzrRcLABKZtA0zshCbbAi8jk17EMC1MdPVF98ickrQ4
+R5zYxlZh2YRjRBgArm27UFrMFkK6jAhkEp3rJoGuzSDGkiLOLRsbagZMXYuiNftp
+zYGGMkoblGjoNfg025KRWke8qwyVx8risTkzPiuvHAaXar87UDe46NbP47NX8VE0
+eLH4x9XjSH9dZexMfPOD/5/NeLK+efmjg+vu64O9/VcGFuxsvHq+5se6wTdzK/qP
+/DP2eLpz5Tgt5PJ/7uh5/rSv895o8dOhNVW3w1+WVf71/dC/l36QX56vGCuu7DP9
+Fctfz2JwXlCf+OlQX3/dvN/Xfb7thjVSKC4env3fy8vVRxd27es6tj2z6fjUkcEz
+AxN6D9/8pnbt5Wpn6eTF4YItxYdfd59a2VLoPjs2cA10Hl1dv1fe+aotdbLQVex5
+eeLU6Jqa1MZd1RNHtx/6Iz9lZHhmMHnV44n1n1zALy7Guzt/u05v5V+X++iLu77V
+VHt6+t+vZpr7rzW3PcoFKzaMTFtde6f93M1C86Rft1Q1OD0dwVs=
+=kSHn
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/jzhu
+
+==================================================================
+
