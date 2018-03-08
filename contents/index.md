@@ -13,7 +13,7 @@ I'm a second-year EECS student at UC Berkeley, and a FIRST Robotics alumni.
 
 Email: [jameszhu@berkeley.edu][email]  
 Resume: [jameszhu.io/resume.pdf][resume]  
-Github: [jzhu98][github]  
+Github: [jameslzhu][github]  
 Linkedin: [jameslzhu][linkedin]  
 Keybase (GPG): [jzhu][keybase]
 
@@ -25,7 +25,7 @@ Keybase (GPG): [jzhu][keybase]
 
 [email]: mailto:jameszhu@berkeley.edu
 [resume]: https://jameszhu.io/resume.pdf
-[github]: https://github.com/jzhu98
+[github]: https://github.com/jameslzhu
 [linkedin]: https://www.linkedin.com/in/jameslzhu
 [keybase]: https://keybase.io/jzhu
 
