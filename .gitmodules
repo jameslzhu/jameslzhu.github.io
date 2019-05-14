@@ -4,3 +4,6 @@
 [submodule "hugo/themes/yuki"]
 	path = hugo/themes/yuki
 	url = git@github.com:iCyris/hugo-theme-yuki.git
+[submodule "hugo/themes/hyde"]
+	path = hugo/themes/hyde
+	url = git@github.com:spf13/hyde.git
