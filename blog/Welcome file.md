@@ -1,6 +1,8 @@
 # Learning
 
-> You thought we could be decent men in an indecent time. - 
+How do I learn, *effectively*?
+
+I'
 
 Next year will be my last year as a student at UC Berkeley.
 
@@ -11,5 +13,5 @@ Next year will be my last year as a student at UC Berkeley.
 ## Practice
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAxMTEzMTAzNiw5NTY2OTI2MDRdfQ==
+eyJoaXN0b3J5IjpbLTEzNTgwMzkwNDgsOTU2NjkyNjA0XX0=
 -->
