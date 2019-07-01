@@ -1,7 +1,9 @@
 # Learning
 
-I've been trying to answer a question for the last three years:
+I've been trying to answer a single question for years:
 How do I learn *effectively*?
+
+I've never doubted my ability: I've 
 
 This is the question that's 
 
@@ -14,5 +16,5 @@ Next year will be my last year as a student at UC Berkeley.
 ## Practice
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNDkxOTYyNiw5NTY2OTI2MDRdfQ==
+eyJoaXN0b3J5IjpbNzQyMzAwMDg4LDk1NjY5MjYwNF19
 -->
