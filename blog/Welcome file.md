@@ -1,5 +1,7 @@
-# Learning effectively
+# Learning
+
+## Theory and Practice
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjA5NjMxOTc5LDk1NjY5MjYwNF19
+eyJoaXN0b3J5IjpbMTUwNTgzMDUyNCw5NTY2OTI2MDRdfQ==
 -->
