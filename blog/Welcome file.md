@@ -1,9 +1,7 @@
-# Learning and Teaching
-I've had many people ask me:
+# Learning
 
-"How do I learn like you?"
-
+I've had many people ask me: "How do I learn like you?"
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA4MDYzNTEyM119
+eyJoaXN0b3J5IjpbNDUzOTUzOTQ3XX0=
 -->
