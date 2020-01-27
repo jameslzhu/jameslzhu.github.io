@@ -1,5 +1,9 @@
-Systems of Power
-================
+---
+layout: post
+title:  "Systems of Power"
+date:   2020-01-27 09:03:10 -0800
+categories: jekyll update
+---
 
 Inspired by Nicky Case's writings on systems, I am taking a shot at describing
 power:
