@@ -1,8 +1,0 @@
-{% macro author(authors, authorName) %}
-  {% set auth = authors[authorName + ".json"] %}
-    {% if auth %}
-      {{auth.metadata.name}}
-    {% else %}
-      {{authorName}}
-    {% endif %}
-{% endmacro %}

@@ -1,9 +1,0 @@
-baseURL = "http://jameszhu.io/"
-languageCode = "en-us"
-title = "My New Hugo Site"
-author = "James Zhu"
-theme = "hyde"
-googleAnalytics = "Your tracking code"
-
-[params]
-#   themeColor = "theme-base-0d"
