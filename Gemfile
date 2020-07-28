@@ -3,7 +3,7 @@
 source "https://rubygems.org"
 
 # Main gems
-gem "jekyll", "3.8.5"
+gem "jekyll", "3.8.7"
 gem "github-pages", group: :jekyll_plugins
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
