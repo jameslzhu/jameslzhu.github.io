@@ -1,0 +1,10 @@
+body, p {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1b1c29;
+}
+h1, h2, h3 {
+    font-family: 'Roboto Slab', serif;
+}
+code, pre {
+    font-family: 'Fira Mono', serif;
+}
