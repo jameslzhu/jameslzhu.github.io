@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #1b1c29;
+  --font-sans: "Roboto", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Roboto Slab", ui-serif, serif;
+  --font-mono: "Fira Mono", ui-monospace, monospace;
+}
