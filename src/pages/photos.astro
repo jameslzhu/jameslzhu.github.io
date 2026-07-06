@@ -1,0 +1,31 @@
+---
+import { Image } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
+import Base from '../layouts/Base.astro';
+
+const images = Object.entries(
+  import.meta.glob<{ default: ImageMetadata }>(
+    '../assets/photos/*.{jpg,jpeg,png,webp,avif}',
+    { eager: true }
+  )
+).sort(([a], [b]) => a.localeCompare(b));
+---
+<Base title="Photography · James Zhu">
+  <h1 class="mt-8 font-serif text-4xl">Photography</h1>
+  {images.length === 0 ? (
+    <p class="mt-6 text-lg text-white/60">Coming soon.</p>
+  ) : (
+    <div class="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2">
+      {images.map(([path, img]) => (
+        <Image
+          src={img.default}
+          alt={path.split('/').pop()?.replace(/\.\w+$/, '') ?? 'photo'}
+          widths={[480, 960]}
+          sizes="(min-width: 640px) 50vw, 100vw"
+          class="w-full rounded"
+        />
+      ))}
+    </div>
+  )}
+  <p class="my-8"><a class="underline" href="/">← Home</a></p>
+</Base>
