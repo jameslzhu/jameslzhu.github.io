@@ -1,13 +1,39 @@
 ---
-import '../styles/global.css';
+import Base from '../layouts/Base.astro';
 ---
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>James Zhu</title>
-  </head>
-  <body class="bg-ink text-white">
-    <h1 class="font-serif text-4xl">James Zhu</h1>
-  </body>
-</html>
+<Base title="James Zhu">
+  <section class="mt-8 flex items-center gap-6 border-b border-white/30 pb-4">
+    <img class="h-32 sm:h-40" src="/planet-light.svg" alt="planet" />
+    <div>
+      <h1 class="font-serif text-4xl sm:text-5xl">James Zhu</h1>
+      <ul class="mt-2 flex gap-4 font-mono font-bold">
+        <li><a class="text-white hover:opacity-70" href="https://github.com/jameslzhu">@github</a></li>
+        <li><a class="text-white hover:opacity-70" href="https://keybase.io/jzhu">@keybase</a></li>
+        <li><a class="text-white hover:opacity-70" href="https://www.linkedin.com/in/jameslzhu">@linkedin</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="border-b border-white/30 py-4 text-lg">
+    <p>Hello! I'm a senior undergraduate at UC Berkeley, studying computer science.</p>
+    <p class="mt-4">
+      I am an alumni of
+      <a class="underline" href="https://www.firstinspires.org/robotics/frc">FIRST Robotics</a>,
+      <a class="underline" href="https://team3061.org">Team 3061</a>.
+    </p>
+  </div>
+
+  <section class="border-b border-white/30 py-4">
+    <h2 class="font-serif text-2xl font-bold">Teaching</h2>
+    <p class="mt-2"><a class="text-lg underline" href="/feedback">CS 168 Feedback</a></p>
+  </section>
+
+  <section class="py-4">
+    <h2 class="font-serif text-xl font-bold">Under construction:</h2>
+    <ul class="mt-2 space-y-2 text-lg">
+      <li><a class="text-white hover:opacity-70" href="/photos">Photography</a></li>
+      <li><a class="text-white hover:opacity-70" href="/blog">Writing</a></li>
+      <li><a class="text-white hover:opacity-70" href="/projects">Projects</a></li>
+    </ul>
+  </section>
+</Base>
