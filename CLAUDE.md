@@ -8,11 +8,15 @@ James Zhu's personal website (www.jameszhu.io), an Astro 5 static site deployed 
 
 ## Commands
 
-- `bun install` — install dependencies (bun is the package manager; do not use npm, the lockfile is `bun.lock`)
-- `bun run dev` — dev server at http://localhost:4321
-- `bun run build` — build to `dist/`
+- `npm install` — install dependencies (npm is the package manager; the lockfile is `package-lock.json`)
+- `npm run dev` — dev server at http://localhost:4321
+- `npm run build` — build to `dist/`
 
-No test suite; verify changes with `bun run build` and inspection of `dist/`.
+Node version is pinned in `.nvmrc` (`nvm use`); CI reads the same file via `setup-node`'s `node-version-file`.
+
+CI uses `npm ci`, which requires `package-lock.json` to stay in sync with `package.json`.
+
+No test suite; verify changes with `npm run build` and inspection of `dist/`.
 
 ## Architecture
 
