@@ -25,4 +25,6 @@ No test suite; verify changes with `npm run build` and inspection of `dist/`.
 - Blog: Markdown content collection in `src/content/blog/` (schema in `src/content.config.ts`), rendered by `src/pages/blog/`.
 - Photography: drop images into `src/assets/photos/` — `src/pages/photos.astro` auto-renders them via `astro:assets`.
 - `/feedback` redirect to a Google Form is configured in `astro.config.mjs` `redirects`.
-- `public/CNAME` (custom domain) and `public/keybase.txt` (Keybase identity proof) must stay — the site breaks or the proof is lost without them.
+- `public/keybase.txt` (Keybase identity proof) must stay — the proof is lost without it.
+- Pages **Source must be set to "GitHub Actions"** (`build_type: workflow`). On the legacy "deploy from a branch" setting GitHub ignores this workflow's artifact and runs its own Jekyll builder, which fails on `.astro` files and takes the site down.
+- The custom domain lives in the repo's Pages settings, not in the repo. Under Actions-based deploys a `CNAME` file in the artifact does **not** set it; `gh api -X PUT repos/:owner/:repo/pages -f cname=www.jameszhu.io` does. `public/CNAME` is kept only as a redundant marker.
