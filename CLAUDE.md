@@ -1,30 +1,24 @@
 # CLAUDE.md
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+Guidance for Claude Code working in this repo.
 
-## What this is
+## Build
 
-James Zhu's personal website (www.jameszhu.io), an Astro 5 static site deployed to GitHub Pages via GitHub Actions (`.github/workflows/deploy.yml`, push to `master`).
+James Zhu's personal site (www.jameszhu.io). Astro 7 static site, deployed to GitHub Pages via `.github/workflows/deploy.yml` (push to `master`).
 
-## Commands
+- `npm install` / `npm run dev` (localhost:4321) / `npm run build` -> `dist/`
+- Node pinned in `.nvmrc`; CI uses `npm ci`, so keep `package-lock.json` in sync.
+- No tests. Verify with `npm run build` and inspect `dist/`.
 
-- `npm install` — install dependencies (npm is the package manager; the lockfile is `package-lock.json`)
-- `npm run dev` — dev server at http://localhost:4321
-- `npm run build` — build to `dist/`
+## Layout
 
-Node version is pinned in `.nvmrc` (`nvm use`); CI reads the same file via `setup-node`'s `node-version-file`.
+- `src/layouts/Base.astro` is the single shared layout (`title`, optional `description`).
+- Tailwind v4 via `@tailwindcss/vite`; theme in `src/styles/global.css` (`@theme` block). No `tailwind.config.js`.
+- `src/pages/` has one file per route. Blog posts in `src/content/blog/` (schema in `src/content.config.ts`); photos drop into `src/assets/photos/` and render via `astro:assets`.
+- Redirects in `astro.config.mjs`.
+- `compressHTML` defaults to `'jsx'`: use `{" "}` at line breaks around inline tags or the spaces vanish.
 
-CI uses `npm ci`, which requires `package-lock.json` to stay in sync with `package.json`.
+## Don't break
 
-No test suite; verify changes with `npm run build` and inspection of `dist/`.
-
-## Architecture
-
-- Tailwind CSS v4 via `@tailwindcss/vite` — theme lives in `src/styles/global.css` (`@theme` block), there is no `tailwind.config.js`.
-- `src/layouts/Base.astro` is the single shared layout (props: `title`, optional `description`).
-- Blog: Markdown content collection in `src/content/blog/` (schema in `src/content.config.ts`), rendered by `src/pages/blog/`.
-- Photography: drop images into `src/assets/photos/` — `src/pages/photos.astro` auto-renders them via `astro:assets`.
-- `/feedback` redirect to a Google Form is configured in `astro.config.mjs` `redirects`.
-- `public/keybase.txt` (Keybase identity proof) must stay — the proof is lost without it.
-- Pages **Source must be set to "GitHub Actions"** (`build_type: workflow`). On the legacy "deploy from a branch" setting GitHub ignores this workflow's artifact and runs its own Jekyll builder, which fails on `.astro` files and takes the site down.
-- The custom domain lives in the repo's Pages settings, not in the repo. Under Actions-based deploys a `CNAME` file in the artifact does **not** set it; `gh api -X PUT repos/:owner/:repo/pages -f cname=www.jameszhu.io` does. `public/CNAME` is kept only as a redundant marker.
+- Pages Source must stay **"GitHub Actions"**. On "deploy from a branch" GitHub runs its own Jekyll build instead, which fails on `.astro` and takes the site down.
+- Keep `public/keybase.txt`. The identity proof is unrecoverable if deleted.
