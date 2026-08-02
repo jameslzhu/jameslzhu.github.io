@@ -11,7 +11,7 @@
     "prepare": "simple-git-hooks || true"
   },
   "simple-git-hooks": {
-    "pre-commit": "npm run verify"
+    "pre-push": "npm run verify"
   },
   "dependencies": {
     "astro": "^7.1.6"

@@ -10,8 +10,8 @@ James Zhu's personal site (www.jameszhu.io). Astro 7 static site, deployed to Gi
 - Node pinned in `.nvmrc`; CI uses `npm ci`, so keep `package-lock.json` in sync.
 - No tests. Verify with `npm run build` and inspect `dist/`.
 - `npm run verify` reproduces CI: lockfile drift check plus build. A
-  `simple-git-hooks` pre-commit hook runs it automatically, installed by the
-  `prepare` script on `npm install`. Bypass with `git commit -n`.
+  `simple-git-hooks` pre-push hook runs it automatically, installed by the
+  `prepare` script on `npm install`. Bypass with `git push --no-verify`.
 
 ## Layout
 
