@@ -9,6 +9,9 @@ James Zhu's personal site (www.jameszhu.io). Astro 7 static site, deployed to Gi
 - `npm install` / `npm run dev` (localhost:4321) / `npm run build` -> `dist/`
 - Node pinned in `.nvmrc`; CI uses `npm ci`, so keep `package-lock.json` in sync.
 - No tests. Verify with `npm run build` and inspect `dist/`.
+- Before pushing, `npm ci --dry-run && npm run build` reproduces CI exactly (the
+  first catches lockfile drift, the second catches build errors). Only the Pages
+  artifact upload needs GitHub.
 
 ## Layout
 
