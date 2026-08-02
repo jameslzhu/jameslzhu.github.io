@@ -16,10 +16,20 @@ James Zhu's personal site (www.jameszhu.io). Astro 7 static site, deployed to Gi
 ## Layout
 
 - `src/layouts/Base.astro` is the single shared layout (`title`, optional `description`).
-- Tailwind v4 via `@tailwindcss/vite`; theme in `src/styles/global.css` (`@theme` block). No `tailwind.config.js`.
-- `src/pages/` has one file per route. Blog posts in `src/content/blog/` (schema in `src/content.config.ts`); photos drop into `src/assets/photos/` and render via `astro:assets`.
+- Tailwind v4 via `@tailwindcss/vite`; tokens and shared utilities in
+  `src/styles/global.css`. No `tailwind.config.js`.
+- All colour goes through tokens: `bg-ink`, `text-fg`, `text-muted`, `border-rule`.
+  Do not reintroduce raw `text-white` / `border-white/30` in pages.
+- Shared patterns are `@utility` classes: `nav-link` (plain link, dims on hover)
+  and `section-rule` (hairline divider).
+- `src/pages/` has one file per route. Homepage copy lives in the `index.astro`
+  frontmatter block, not the markup. Blog posts in `src/content/blog/` (schema in
+  `src/content.config.ts`); photos drop into `src/assets/photos/` and render via
+  `astro:assets`.
 - Redirects in `astro.config.mjs`.
-- `compressHTML` defaults to `'jsx'`: use `{" "}` at line breaks around inline tags or the spaces vanish.
+- `compressHTML: false` is set deliberately: output stays readable in view-source,
+  and prose wrapping an inline `<a>` keeps its spaces without `{" "}`. Do not
+  remove it or restore the Astro 7 `'jsx'` default.
 
 ## Don't break
 
