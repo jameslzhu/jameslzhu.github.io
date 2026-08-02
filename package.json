@@ -6,13 +6,19 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
-    "preview": "astro preview"
+    "preview": "astro preview",
+    "verify": "npm ci --dry-run && astro build",
+    "prepare": "simple-git-hooks || true"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "npm run verify"
   },
   "dependencies": {
     "astro": "^7.1.6"
   },
   "devDependencies": {
     "@tailwindcss/vite": "^4.0.0",
+    "simple-git-hooks": "^2.13.1",
     "tailwindcss": "^4.0.0"
   }
 }
