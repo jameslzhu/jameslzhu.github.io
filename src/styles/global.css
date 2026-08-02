@@ -1,8 +1,30 @@
 @import "tailwindcss";
 
+/* Design tokens. Change a colour here and it changes everywhere. */
 @theme {
-  --color-ink: #1b1c29;
+  /* Colour */
+  --color-ink: #1b1c29;                    /* page background */
+  --color-fg: #ffffff;                     /* primary text */
+  --color-muted: rgb(255 255 255 / 0.6);   /* dates, captions, secondary text */
+  --color-rule: rgb(255 255 255 / 0.3);    /* hairline dividers */
+
+  /* Type */
   --font-sans: "Roboto", ui-sans-serif, system-ui, sans-serif;
   --font-serif: "Roboto Slab", ui-serif, serif;
   --font-mono: "Fira Mono", ui-monospace, monospace;
+}
+
+/* Repeated patterns. Restyle every link or divider from one place. */
+
+/* Plain navigational link: inherits text colour, dims on hover. */
+@utility nav-link {
+  color: var(--color-fg);
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+/* Hairline divider under a section. */
+@utility section-rule {
+  border-bottom: 1px solid var(--color-rule);
 }

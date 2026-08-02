@@ -12,7 +12,7 @@ const posts = (await getCollection('blog')).sort(
     {posts.map((post) => (
       <li>
         <a class="text-xl underline" href={`/blog/${post.id}/`}>{post.data.title}</a>
-        <p class="font-mono text-sm text-white/60">
+        <p class="font-mono text-sm text-muted">
           {post.data.date.toISOString().slice(0, 10)}
         </p>
       </li>
